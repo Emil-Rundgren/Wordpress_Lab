@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<h1>Hej detta är min Bloggsida!</h1>
+<h1>Söksida</h1>
 
 <!-- WordPress "The Loop" -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

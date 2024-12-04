@@ -7,6 +7,7 @@
     <!-- Hook for WordPress head (meta) tags -->
     <?php wp_head(); ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 <body>
@@ -18,10 +19,7 @@
         <h1 class="m-0">Labb 1</h1>
 
         <!-- Sökfält -->
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Sök" aria-label="Search">
-            <button class="btn btn-dark" type="submit">Sök</button>
-        </form>
+        <?php get_search_form()?>
     </div>
 </header>
 
@@ -32,9 +30,22 @@
         wp_nav_menu(array(
             'theme_location' => 'header-menu',
             'container' => false,
-            'menu_class' => 'nav justify-content-center',
-            'fallback_cb' => false, // Döljer menyn om ingen är tilldelad
+            'menu_class' => 'nav justify-content-around',
         ));
         ?>
     </div>
 </nav>
+
+<style>
+/* Gör alla länkar i menyn vita */
+.nav a {
+    color: white; /* Vit färg för text */
+    text-decoration: none; /* Ta bort understrykning */
+}
+
+/* Optional: Hover-effekt */
+.nav a:hover {
+    color: #ddd; /* Ljussare vit färg vid hover */
+    text-decoration: underline; /* Lägg till linje vid hover */
+}
+</style>
