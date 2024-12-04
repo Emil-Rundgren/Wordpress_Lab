@@ -11,15 +11,30 @@
 </head>
 <body>
 
-<!-- Meny/Nav -->
-<?php
-wp_nav_menu(array(
-    'theme_location' => 'header-menu', // Identifieraren för menyplatsen
-    'container' => 'nav',             // Omsluter menyn i ett <nav>-element
-    'container_class' => 'header-menu', // Klass för <nav>-elementet
-    'menu_class' => 'menu'           // Klass för <ul>-elementet
-));
-?>
+<!-- Header -->
+<header class="bg-danger text-white">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+        <!-- Titel -->
+        <h1 class="m-0">Labb 1</h1>
 
-<!-- Sökfält -->
-<?php get_search_form(); ?>
+        <!-- Sökfält -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Sök" aria-label="Search">
+            <button class="btn btn-dark" type="submit">Sök</button>
+        </form>
+    </div>
+</header>
+
+<!-- Meny -->
+<nav class="bg-dark">
+    <div class="container">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'header-menu',
+            'container' => false,
+            'menu_class' => 'nav justify-content-center',
+            'fallback_cb' => false, // Döljer menyn om ingen är tilldelad
+        ));
+        ?>
+    </div>
+</nav>
