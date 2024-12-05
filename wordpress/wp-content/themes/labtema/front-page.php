@@ -1,5 +1,4 @@
 <?php get_header();?>
-
 <!-- Hero-sektion -->
 <div class="hero bg-light text-center text-white mx-auto col-8" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/standardblogg.jpg');">
     <div class="container d-flex justify-content-center align-items-center h-100">
@@ -9,7 +8,6 @@
         </div>
     </div>
 </div>
-
 <?php get_footer();?>
 
 <style>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container my-5">
-    <h1 class="mb-4"><?php the_category()?></h1>
+    <h1 class="mb-4"><?php the_archive_title()?></h1>
     <div class="column">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="col-10 mb-4">
