@@ -14,9 +14,9 @@
 
 <!-- Header -->
 <header class="bg-danger text-white">
-    <div class="container d-flex justify-content-between align-items-center py-2">
+    <div class="container d-flex justify-content-between align-items-center py-3">
         <!-- Titel -->
-        <h1 class="m-0">Labb 1</h1>
+        <h2 class="m-0">Labb 1</h2>
 
         <!-- Sökfält -->
         <?php get_search_form()?>
@@ -24,13 +24,13 @@
 </header>
 
 <!-- Meny -->
-<nav class="bg-dark">
+<nav class="bg-dark mb-5">
     <div class="container">
         <?php
         wp_nav_menu(array(
             'theme_location' => 'header-menu',
             'container' => false,
-            'menu_class' => 'nav justify-content-around',
+            'menu_class' => 'nav justify-content-around col-8 mx-auto py-2',
         ));
         ?>
     </div>

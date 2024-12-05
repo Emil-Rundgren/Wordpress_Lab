@@ -34,8 +34,8 @@
             </span>
         </div>
 
-        <!-- Sammanfattning -->
-        <p class="card-text"><?php the_excerpt(); ?></p>
+        <!-- Innehåll -->
+        <p class="card-text"><?php the_content(); ?></p>
     </div>
 </div>
 
