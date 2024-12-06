@@ -16,7 +16,7 @@
 <header class="bg-danger text-white">
     <div class="container d-flex justify-content-between align-items-center py-3">
         <!-- Titel -->
-        <h2 class="m-0">Labb 1</h2>
+        <h2 class="m-0">Manchester United News</h2>
 
         <!-- Sökfält -->
         <?php get_search_form()?>
