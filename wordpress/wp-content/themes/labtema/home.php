@@ -11,7 +11,7 @@
                         <div class="col-12 mb-4">
                             <div class="card h-100">
                                 <!-- Bild som visas för alla inlägg -->
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/standardblogg.jpg" class="card-img-top p-4 pb-0" alt="En standardbild">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/antony.jpg" class="card-img-top p-4 pb-0" alt="En standardbild">
 
                                 <!-- Kortens text och post-meta -->
                                 <div class="card-body">

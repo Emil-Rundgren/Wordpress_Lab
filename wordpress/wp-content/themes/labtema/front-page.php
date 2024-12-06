@@ -1,6 +1,6 @@
 <?php get_header();?>
 <!-- Hero-sektion -->
-<div class="hero bg-light text-center text-white mx-auto col-8" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/standardblogg.jpg');">
+<div class="hero bg-light text-center text-white mx-auto col-8" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/oldtrafford.jpg');">
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div>
             <h1 class="display-4 fw-bold">Hej och välkommen!</h1>
@@ -24,6 +24,6 @@
 }
 
 .hero p {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 </style>
