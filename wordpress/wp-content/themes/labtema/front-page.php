@@ -2,9 +2,9 @@
 <!-- Hero-sektion -->
 <div class="hero bg-light text-center text-white mx-auto col-8" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/oldtrafford.jpg');">
     <div class="container d-flex justify-content-center align-items-center h-100">
-        <div>
-            <h1 class="display-4 fw-bold">Hej och välkommen!</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sodales mauris. Aliquam felis est, efficitur vel fringilla quis, vehicula quis ex.</p>
+        <div class="bg-dark bg-opacity-75 p-4 rounded">
+            <h1 class="display-4 fw-bold">Välkommen till Red Devils Sverige!</h1>
+            <p class="lead">Den ultimata mötesplatsen för Manchester United-fans i Sverige. Här hittar du de senaste nyheterna, analyser, och passionen som förenar oss!</p>
         </div>
     </div>
 </div>

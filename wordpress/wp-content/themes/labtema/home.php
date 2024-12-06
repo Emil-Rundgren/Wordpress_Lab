@@ -4,11 +4,11 @@
     <div class="row">
         <!-- Huvudinnehåll -->
         <div class="col-md-8">
-            <h1 class="mb-4">Bloggsida</h1>
+            <h1 class="mb-4 mx-auto">Bloggsida</h1>
             <div class="column">
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
-                        <div class="col-12 mb-4">
+                        <div class="col-10 mx-auto mb-4">
                             <div class="card h-100">
                                 <!-- Bild som visas för alla inlägg -->
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/antony.jpg" class="card-img-top p-4 pb-0" alt="En standardbild">
