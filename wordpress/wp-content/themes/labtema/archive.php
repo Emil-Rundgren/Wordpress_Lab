@@ -1,11 +1,21 @@
 <?php get_header(); ?>
-<h1><?php the_archive_title(); ?></h1>
-<?php if (have_posts()) : ?>
-<?php while (have_posts()) : the_post(); ?>
-<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-<p><?php the_excerpt(); ?></p>
-<?php endwhile; ?>
-<?php else : ?>
-<p>Inga inlägg hittades.</p>
-<?php endif; ?>
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Huvudinnehåll -->
+        <div class="col-md-8">
+            <h1 class="mb-4 mx-auto"><?php the_archive_title()?></h1>
+            <div class="column">
+                <!-- Inlägg -->
+                <?php get_template_part('content'); ?>
+                <!-- Paginering -->
+                <?php get_template_part('pagination'); ?>
+            </div>
+        </div>
+
+        <!-- Sidomeny -->
+        <?php get_template_part('sidomeny'); ?>
+    </div>
+</div>
+
 <?php get_footer(); ?>
