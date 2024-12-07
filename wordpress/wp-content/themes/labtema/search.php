@@ -1,17 +1,21 @@
-<?php get_header();?>
+<?php get_header(); ?>
 
-<h1>Söksida</h1>
+<div class="container my-5">
+    <div class="row">
+        <!-- Huvudinnehåll -->
+        <div class="col-md-8">
+            <h1 class="mb-4 mx-auto">Sökresultat för "<?php echo esc_html(get_search_query()); ?>"</h1>
+            <div class="column">
+                <!-- Inlägg -->
+                <?php get_template_part('content'); ?>
+                <!-- Paginering -->
+                <?php get_template_part('pagination'); ?>
+            </div>
+        </div>
 
-<!-- WordPress "The Loop" -->
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-    <?php if (has_post_thumbnail()) : ?>
-        <img src="<?php the_post_thumbnail_url('large') ?>" alt="">
-    <?php endif; ?>
-
-    <h1><?php the_title(); ?></h1>
-    <p><?php the_content(); ?></p>
-
-<?php endwhile; endif; ?>
+        <!-- Sidomeny -->
+        <?php get_template_part('sidomeny'); ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>
