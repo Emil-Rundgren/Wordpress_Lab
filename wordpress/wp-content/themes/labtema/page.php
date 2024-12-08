@@ -1,3 +1,4 @@
+<!-- Kod för kontakt sida -->
 <?php get_header(); ?>
 <div class="container d-flex justify-content-center">
         <div class="mx-auto">
@@ -8,7 +9,3 @@
         </div>
 </div>
 <?php get_footer(); ?>
-
-<!-- Hur man lägger till en template till admin -->
-
-<!-- Template name: Kontakt sida -->

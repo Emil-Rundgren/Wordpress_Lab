@@ -1,3 +1,4 @@
+<!-- Widget -->
 <div class="col-md-4 mt-3 mt-md-0">
     <?php if (is_active_sidebar('sidomeny')) : ?>
         <aside id="secondary" class="sidomeny bg-dark text-white p-3 rounded">
